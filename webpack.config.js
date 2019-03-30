@@ -30,18 +30,7 @@ module.exports = {
           MiniCssExtractPlugin.loader, 'css-loader',
         ],
       },
-      // {
-      //   test: /\.(png|jpg|gif)$/i,
-      //   use: [
-      //     {
-      //       loader: 'url-loader',
-      //       options: {
-      //         limit: 8192
-      //       }
-      //     }
-      //   ]
-      // },
-       {
+      {
         test: /\.(png|jpg|gif|ico)$/,
         use: [
           {
@@ -52,7 +41,7 @@ module.exports = {
           },
         ],
       },
-    ],//end rules:
+    ],
   },
   plugins: [
     new HtmlWebPackPlugin({
